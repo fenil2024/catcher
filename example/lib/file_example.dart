@@ -25,8 +25,7 @@ void main() async {
     DialogReportMode(),
     [FileHandler(File(path), printLogs: true)],
   );
-  final releaseOptions =
-      Catcher2Options(DialogReportMode(), [FileHandler(File(path))]);
+  final releaseOptions = Catcher2Options(DialogReportMode(), [FileHandler(File(path))]);
   catcher2.updateConfig(
     debugConfig: debugOptions,
     releaseConfig: releaseOptions,

@@ -1,4 +1,12 @@
-import 'package:catcher_2/catcher_2.dart';
+import 'package:catcher_2/core/catcher_2.dart';
+import 'package:catcher_2/handlers/console_handler.dart';
+import 'package:catcher_2/handlers/email_manual_handler.dart';
+import 'package:catcher_2/handlers/http_handler.dart';
+import 'package:catcher_2/mode/dialog_report_mode.dart';
+import 'package:catcher_2/mode/page_report_mode.dart';
+import 'package:catcher_2/model/catcher_2_options.dart';
+import 'package:catcher_2/model/http_request_type.dart';
+import 'package:catcher_2/model/localization_options.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -24,18 +32,15 @@ void main() {
       LocalizationOptions(
         'pl',
         notificationReportModeTitle: 'Wystąpił błąd aplikacji',
-        notificationReportModeContent:
-            'Naciśnij tutaj aby wysłać raport do zespołu wpsarcia',
+        notificationReportModeContent: 'Naciśnij tutaj aby wysłać raport do zespołu wpsarcia',
         dialogReportModeTitle: 'Błąd aplikacji',
-        dialogReportModeDescription:
-            'Wystąpił niespodziewany błąd aplikacji. Raport z błędem jest '
+        dialogReportModeDescription: 'Wystąpił niespodziewany błąd aplikacji. Raport z błędem jest '
             'gotowy do wysłania do zespołu wsparcia. Naciśnij akceptuj aby '
             'wysłać raport lub odrzuć aby odrzucić raport.',
         dialogReportModeAccept: 'Akceptuj',
         dialogReportModeCancel: 'Odrzuć',
         pageReportModeTitle: 'Błąd aplikacji',
-        pageReportModeDescription:
-            'Wystąpił niespodziewany błąd aplikacji. Raport z błędem jest '
+        pageReportModeDescription: 'Wystąpił niespodziewany błąd aplikacji. Raport z błędem jest '
             'gotowy do wysłania do zespołu wsparcia. Naciśnij akceptuj aby '
             'wysłać raport lub odrzuć aby odrzucić raport.',
         pageReportModeAccept: 'Akceptuj',
