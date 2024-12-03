@@ -27,12 +27,18 @@ dependencies:
   dio: ^5.0.1
   flutter:
     sdk: flutter
-  flutter_local_notifications: ^15.1.1
+  # flutter_local_notifications:
+  #   path: "/Volumes/Project Data/Fenil/flutter_local_notifications/flutter_local_notifications"
+  flutter_local_notifications:
+    git:
+      url: https://github.com/fenil2024/flutter_local_notifications.git
+      path: flutter_local_notifications
+      ref: 00aa411fa19b0ed8b3a80ba7c9e99a2828d7f65d
   flutter_localizations:
     sdk: flutter
   path_provider: ^2.0.1
   permission_handler: ^11.0.0
-  sentry: ^7.2.0
+  sentry: ^8.10.1
 
 dev_dependencies:
   flutter_test:
